@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_background"
+    android:padding="16dp"
+    android:layout_marginBottom="8dp">
+
+    <!-- Country Flag Image -->
+    <ImageView
+        android:id="@+id/imageFlag"
+        android:layout_width="96dp"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_launcher_background" />
+
+    <!-- Country Name -->
+    <TextView
+        android:id="@+id/textCountryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/imageFlag"
+        android:text="Country Name"
+        android:textColor="#333"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Capital -->
+    <TextView
+        android:id="@+id/textCapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textCountryName"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/imageFlag"
+        android:text="Capital: "
+        android:textColor="#666"
+        android:textSize="16sp" />
+
+    <!-- Population -->
+    <TextView
+        android:id="@+id/textPopulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textCapital"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@id/imageFlag"
+        android:text="Population: "
+        android:textColor="#666"
+        android:textSize="16sp" />
+
+    <!-- Currency -->
+    <TextView
+        android:id="@+id/textCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textPopulation"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/imageFlag"
+        android:text="Currency: "
+        android:textColor="#666"
+        android:textSize="16sp" />
+
+    <!-- Continent -->
+    <TextView
+        android:id="@+id/textContinent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textCurrency"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/imageFlag"
+        android:text="Continent: "
+        android:textColor="#666"
+        android:textSize="16sp" />
+
+</RelativeLayout>
